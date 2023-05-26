@@ -1,0 +1,556 @@
+@prefix : <urn:webprotege:ontology:94f7079f-c940-439a-b5b7-a4d79891710e#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:webprotege:ontology:94f7079f-c940-439a-b5b7-a4d79891710e> .
+
+<urn:webprotege:ontology:94f7079f-c940-439a-b5b7-a4d79891710e> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/type
+<http://purl.org/dc/elements/1.1/type> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R43dU8fgxWUdFsAM7QCK4l
+<http://webprotege.stanford.edu/R43dU8fgxWUdFsAM7QCK4l> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <http://webprotege.stanford.edu/R816Db6jBs9ggDVHESZgdOj> ;
+                                                        rdfs:range <http://webprotege.stanford.edu/R9qmxR3csKsxyDzxrKh848m> ;
+                                                        rdfs:label "是否患膀胱肿瘤"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R82rRG2A1Fn8zTXOnikf7Vc
+<http://webprotege.stanford.edu/R82rRG2A1Fn8zTXOnikf7Vc> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R7yWnNNbkfMWYcdT90nTan2> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/R9IWFH304REJz4rqgOKDNej> ,
+                                                                    <http://webprotege.stanford.edu/RDf1GQgOOciAurg3t2GttGY> ;
+                                                         rdfs:label "初步推断"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R8iUbHwK5D7vpwppZguW2Fb
+<http://webprotege.stanford.edu/R8iUbHwK5D7vpwppZguW2Fb> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:label "进一步检查"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RCCxHaZ0YmHvWNddn04PyBG
+<http://webprotege.stanford.edu/RCCxHaZ0YmHvWNddn04PyBG> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://webprotege.stanford.edu/RCfSPkBJFEFMWbEIm8nXyQU> ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RBlyufCiR916l6h6hJRj2cr> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RBlyufCiR916l6h6hJRj2cr> ;
+                                                         rdfs:label "定期采取"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RCfSPkBJFEFMWbEIm8nXyQU
+<http://webprotege.stanford.edu/RCfSPkBJFEFMWbEIm8nXyQU> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R9IWFH304REJz4rqgOKDNej> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RDf1GQgOOciAurg3t2GttGY> ;
+                                                         rdfs:label "肿瘤类别"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RDTzLTaGY65EjEpfh0l7dY6
+<http://webprotege.stanford.edu/RDTzLTaGY65EjEpfh0l7dY6> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:range <http://webprotege.stanford.edu/R7yWnNNbkfMWYcdT90nTan2> ;
+                                                         rdfs:label "具有症状"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD
+<http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <http://webprotege.stanford.edu/R9IWFH304REJz4rqgOKDNej> ;
+                                                        rdfs:range <http://webprotege.stanford.edu/RCKV1IMTEz0KUSAcYUkqCqa> ;
+                                                        rdfs:label "治疗手段"@zh-cn .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R9gwpWJIbgnmNq9QxT0xmWe
+<http://webprotege.stanford.edu/R9gwpWJIbgnmNq9QxT0xmWe> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:range xsd:boolean ;
+                                                         rdfs:label "是否有吸烟史"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RBBX4mXhMcMP0XW7IbOTlCA
+<http://webprotege.stanford.edu/RBBX4mXhMcMP0XW7IbOTlCA> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:label "体重"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RCHW4b7T2ChcUVTKjKGspiN
+<http://webprotege.stanford.edu/RCHW4b7T2ChcUVTKjKGspiN> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:label "性别"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RHZj5x4BcIgs0cpVOdWuNX
+<http://webprotege.stanford.edu/RHZj5x4BcIgs0cpVOdWuNX> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:range xsd:int ;
+                                                        rdfs:label "年龄"@zh-cn .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R0rDH5CJFTeKbaBWpO6lXv
+<http://webprotege.stanford.edu/R0rDH5CJFTeKbaBWpO6lXv> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/R1MySsESA5IwebqvkX0Ij3> ;
+                                                        rdfs:label "尿细胞学及肿瘤标志物检查"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R1MySsESA5IwebqvkX0Ij3
+<http://webprotege.stanford.edu/R1MySsESA5IwebqvkX0Ij3> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/R9qmxR3csKsxyDzxrKh848m> ;
+                                                        rdfs:label "诊断"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R1jnLddLsu9IH3gNqrnB4n
+<http://webprotege.stanford.edu/R1jnLddLsu9IH3gNqrnB4n> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/R1MySsESA5IwebqvkX0Ij3> ;
+                                                        rdfs:label "活组织切片检查"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R4pwxrbYJb2xJic0ovMUGm
+<http://webprotege.stanford.edu/R4pwxrbYJb2xJic0ovMUGm> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/R9IWFH304REJz4rqgOKDNej> ;
+                                                        rdfs:label "鳞状上皮细胞癌"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R7yWnNNbkfMWYcdT90nTan2
+<http://webprotege.stanford.edu/R7yWnNNbkfMWYcdT90nTan2> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R9qmxR3csKsxyDzxrKh848m> ;
+                                                         rdfs:label "病征"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R816Db6jBs9ggDVHESZgdOj
+<http://webprotege.stanford.edu/R816Db6jBs9ggDVHESZgdOj> rdf:type owl:Class ;
+                                                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RDTzLTaGY65EjEpfh0l7dY6> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R7yWnNNbkfMWYcdT90nTan2>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R9gwpWJIbgnmNq9QxT0xmWe> ;
+                                                                           owl:someValuesFrom xsd:boolean
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RBBX4mXhMcMP0XW7IbOTlCA> ;
+                                                                           owl:someValuesFrom xsd:float
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RCHW4b7T2ChcUVTKjKGspiN> ;
+                                                                           owl:someValuesFrom xsd:string
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RHZj5x4BcIgs0cpVOdWuNX> ;
+                                                                           owl:someValuesFrom xsd:int
+                                                                         ] ;
+                                                         rdfs:label "患者"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R8DfIFs4l1Qr3cojhWaZOHV
+<http://webprotege.stanford.edu/R8DfIFs4l1Qr3cojhWaZOHV> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBlPjxI65eLlhfkB5fa7TOl> ;
+                                                         rdfs:label "尿急"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R8LrGA7yNBTnA7paYLSB9ty
+<http://webprotege.stanford.edu/R8LrGA7yNBTnA7paYLSB9ty> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                         rdfs:label "体重减轻"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R8M3usSKsGkxt8njC03wKuO
+<http://webprotege.stanford.edu/R8M3usSKsGkxt8njC03wKuO> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R1MySsESA5IwebqvkX0Ij3> ;
+                                                         rdfs:label "核磁共振检查"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R8askv37l0gfUnMTlsxa6Pc
+<http://webprotege.stanford.edu/R8askv37l0gfUnMTlsxa6Pc> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBlPjxI65eLlhfkB5fa7TOl> ;
+                                                         rdfs:label "尿痛"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R8czSff8wRQH8zngWNiPExT
+<http://webprotege.stanford.edu/R8czSff8wRQH8zngWNiPExT> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R1MySsESA5IwebqvkX0Ij3> ;
+                                                         rdfs:label "验血"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R8vc3oMyEs6BzKJPzploD4r
+<http://webprotege.stanford.edu/R8vc3oMyEs6BzKJPzploD4r> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBlPjxI65eLlhfkB5fa7TOl> ;
+                                                         rdfs:label "尿频"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R9IWFH304REJz4rqgOKDNej
+<http://webprotege.stanford.edu/R9IWFH304REJz4rqgOKDNej> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R9qmxR3csKsxyDzxrKh848m> ;
+                                                         rdfs:label "分类"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R9TbdYDK2yqTKN2lo6LV2VB
+<http://webprotege.stanford.edu/R9TbdYDK2yqTKN2lo6LV2VB> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RCKV1IMTEz0KUSAcYUkqCqa> ;
+                                                         rdfs:label "化学药物治疗"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R9qmxR3csKsxyDzxrKh848m
+<http://webprotege.stanford.edu/R9qmxR3csKsxyDzxrKh848m> rdf:type owl:Class ;
+                                                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R43dU8fgxWUdFsAM7QCK4l> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R816Db6jBs9ggDVHESZgdOj>
+                                                                         ] ;
+                                                         rdfs:label "膀胱肿瘤"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RBlPjxI65eLlhfkB5fa7TOl
+<http://webprotege.stanford.edu/RBlPjxI65eLlhfkB5fa7TOl> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R7yWnNNbkfMWYcdT90nTan2> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R8iUbHwK5D7vpwppZguW2Fb> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R8M3usSKsGkxt8njC03wKuO>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R82rRG2A1Fn8zTXOnikf7Vc> ;
+                                                                           owl:hasValue <http://webprotege.stanford.edu/R7Lp2JyYmcNY8mjs0c4KkuS>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R82rRG2A1Fn8zTXOnikf7Vc> ;
+                                                                           owl:hasValue <http://webprotege.stanford.edu/RCZcWLfRYtAEDNttBHcmVO>
+                                                                         ] ;
+                                                         rdfs:label "膀胱刺激征"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RBlyufCiR916l6h6hJRj2cr
+<http://webprotege.stanford.edu/RBlyufCiR916l6h6hJRj2cr> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RCKV1IMTEz0KUSAcYUkqCqa> ;
+                                                         rdfs:label "手术"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RC9n0GkSp26eHlWXpNMGbDn
+<http://webprotege.stanford.edu/RC9n0GkSp26eHlWXpNMGbDn> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R9IWFH304REJz4rqgOKDNej> ;
+                                                         rdfs:label "膀胱尿路上皮癌"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RCDYlnUideUqVQxFM3FtTAt
+<http://webprotege.stanford.edu/RCDYlnUideUqVQxFM3FtTAt> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RCKV1IMTEz0KUSAcYUkqCqa> ;
+                                                         rdfs:label "放射线治疗"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RCE9Y7QX2qbWk0VI1ZZy9fG
+<http://webprotege.stanford.edu/RCE9Y7QX2qbWk0VI1ZZy9fG> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                         rdfs:label "肾脏部位疼痛"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RCKV1IMTEz0KUSAcYUkqCqa
+<http://webprotege.stanford.edu/RCKV1IMTEz0KUSAcYUkqCqa> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R9qmxR3csKsxyDzxrKh848m> ;
+                                                         rdfs:label "治疗"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RCLBi19ZUEh93i758Xm4Ksy
+<http://webprotege.stanford.edu/RCLBi19ZUEh93i758Xm4Ksy> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                         rdfs:label "直肠肛门疼痛"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RCehlAe8QC2wYhTN8RmFYcI
+<http://webprotege.stanford.edu/RCehlAe8QC2wYhTN8RmFYcI> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                         rdfs:label "骨骼疼痛"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RD2nmPokUF26WsFLuVSvbt
+<http://webprotege.stanford.edu/RD2nmPokUF26WsFLuVSvbt> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                        rdfs:label "贫血"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RDG1lHUbPI4BR1TqVKkO9BO
+<http://webprotege.stanford.edu/RDG1lHUbPI4BR1TqVKkO9BO> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R1MySsESA5IwebqvkX0Ij3> ;
+                                                         rdfs:label "静脉尿路造影"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RDf1GQgOOciAurg3t2GttGY
+<http://webprotege.stanford.edu/RDf1GQgOOciAurg3t2GttGY> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R9qmxR3csKsxyDzxrKh848m> ;
+                                                         rdfs:label "分期"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T
+<http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R7yWnNNbkfMWYcdT90nTan2> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R8iUbHwK5D7vpwppZguW2Fb> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R8M3usSKsGkxt8njC03wKuO>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R82rRG2A1Fn8zTXOnikf7Vc> ;
+                                                                           owl:hasValue <http://webprotege.stanford.edu/R7Lp2JyYmcNY8mjs0c4KkuS>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R82rRG2A1Fn8zTXOnikf7Vc> ;
+                                                                           owl:hasValue <http://webprotege.stanford.edu/RCZcWLfRYtAEDNttBHcmVO>
+                                                                         ] ;
+                                                         rdfs:label "其他病征"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RJVBE0fXz3JercDjSeHuTQ
+<http://webprotege.stanford.edu/RJVBE0fXz3JercDjSeHuTQ> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/R9IWFH304REJz4rqgOKDNej> ;
+                                                        rdfs:label "腺性上皮细胞癌"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/ROu7dOWSnSRIRW3lmEueSJ
+<http://webprotege.stanford.edu/ROu7dOWSnSRIRW3lmEueSJ> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/R1MySsESA5IwebqvkX0Ij3> ;
+                                                        rdfs:label "膀胱镜检查"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RmPJ5qWG6y03hb4N89BqH
+<http://webprotege.stanford.edu/RmPJ5qWG6y03hb4N89BqH> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://webprotege.stanford.edu/R1MySsESA5IwebqvkX0Ij3> ;
+                                                       rdfs:label "超声检查"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RqXryO7jsCJsFFhqZGSSAh
+<http://webprotege.stanford.edu/RqXryO7jsCJsFFhqZGSSAh> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                        rdfs:label "小腿肿胀"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RxRnw2rgP9oeWVnxQyX6Zw
+<http://webprotege.stanford.edu/RxRnw2rgP9oeWVnxQyX6Zw> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                        rdfs:label "盆骨疼痛"@zh-cn .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://webprotege.stanford.edu/R73sP0zsPgqGreG9WgiKOFn
+<http://webprotege.stanford.edu/R73sP0zsPgqGreG9WgiKOFn> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                         rdfs:label "骨盆疼痛"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R7KMO8wtvYdlR5K6jWH5kB6
+<http://webprotege.stanford.edu/R7KMO8wtvYdlR5K6jWH5kB6> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RC9n0GkSp26eHlWXpNMGbDn> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD> ;
+                                                                    owl:someValuesFrom <http://webprotege.stanford.edu/RCDYlnUideUqVQxFM3FtTAt>
+                                                                  ] ;
+                                                         <http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD> <http://webprotege.stanford.edu/RDWy55qob8cALBSGjPDDxRm> ;
+                                                         rdfs:label "非肌层浸润性肿瘤（表浅性膀胱癌）"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R7Lp2JyYmcNY8mjs0c4KkuS
+<http://webprotege.stanford.edu/R7Lp2JyYmcNY8mjs0c4KkuS> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDf1GQgOOciAurg3t2GttGY> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD> ;
+                                                                    owl:someValuesFrom <http://webprotege.stanford.edu/RCDYlnUideUqVQxFM3FtTAt>
+                                                                  ] ;
+                                                         <http://webprotege.stanford.edu/RCfSPkBJFEFMWbEIm8nXyQU> <http://webprotege.stanford.edu/RCZcWLfRYtAEDNttBHcmVO> ;
+                                                         <http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD> <http://webprotege.stanford.edu/R8d3tNhqNVrOE2YW22q7Lvb> ,
+                                                                                                                 <http://webprotege.stanford.edu/RrJy91vEzDPxFP5VsqZIZk> ;
+                                                         rdfs:label "≥T2期"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R7SNFyTm6JZAn2OUR5z2Xpt
+<http://webprotege.stanford.edu/R7SNFyTm6JZAn2OUR5z2Xpt> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R7yWnNNbkfMWYcdT90nTan2> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://webprotege.stanford.edu/R8iUbHwK5D7vpwppZguW2Fb> ;
+                                                                    owl:someValuesFrom <http://webprotege.stanford.edu/R8M3usSKsGkxt8njC03wKuO>
+                                                                  ] ;
+                                                         <http://webprotege.stanford.edu/R82rRG2A1Fn8zTXOnikf7Vc> <http://webprotege.stanford.edu/R7KMO8wtvYdlR5K6jWH5kB6> ,
+                                                                                                                  <http://webprotege.stanford.edu/R7eBAPtNkKnqQejAxbgKbdr> ,
+                                                                                                                  <http://webprotege.stanford.edu/RCN20zifXqxiN1pbGSiB493> ,
+                                                                                                                  <http://webprotege.stanford.edu/RCP6ouGDQKmKuT2PzHxUmxO> ;
+                                                         rdfs:label "血尿"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R7eBAPtNkKnqQejAxbgKbdr
+<http://webprotege.stanford.edu/R7eBAPtNkKnqQejAxbgKbdr> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDf1GQgOOciAurg3t2GttGY> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD> ;
+                                                                    owl:someValuesFrom <http://webprotege.stanford.edu/RCDYlnUideUqVQxFM3FtTAt>
+                                                                  ] ;
+                                                         <http://webprotege.stanford.edu/RCfSPkBJFEFMWbEIm8nXyQU> <http://webprotege.stanford.edu/R7KMO8wtvYdlR5K6jWH5kB6> ;
+                                                         <http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD> <http://webprotege.stanford.edu/RDWy55qob8cALBSGjPDDxRm> ;
+                                                         <http://purl.org/dc/elements/1.1/type> "早期膀胱癌，非肌层浸润性膀胱癌"@zh-cn ;
+                                                         rdfs:label "Tis期"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R8MotrxjJL8qHvTAJt1ty6J
+<http://webprotege.stanford.edu/R8MotrxjJL8qHvTAJt1ty6J> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                         rdfs:label "骨骼疼痛"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R8SQjwBfoXQO5aCJPWi216z
+<http://webprotege.stanford.edu/R8SQjwBfoXQO5aCJPWi216z> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                         rdfs:label "盆腔内膀胱附近明显肿块"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R8aOiFFXGkVV4Xo1I2Y6t84
+<http://webprotege.stanford.edu/R8aOiFFXGkVV4Xo1I2Y6t84> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R7yWnNNbkfMWYcdT90nTan2> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://webprotege.stanford.edu/R8iUbHwK5D7vpwppZguW2Fb> ;
+                                                                    owl:someValuesFrom <http://webprotege.stanford.edu/R8M3usSKsGkxt8njC03wKuO>
+                                                                  ] ;
+                                                         <http://webprotege.stanford.edu/R82rRG2A1Fn8zTXOnikf7Vc> <http://webprotege.stanford.edu/R7KMO8wtvYdlR5K6jWH5kB6> ,
+                                                                                                                  <http://webprotege.stanford.edu/RCP6ouGDQKmKuT2PzHxUmxO> ;
+                                                         rdfs:label "小便困难"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/R8d3tNhqNVrOE2YW22q7Lvb
+<http://webprotege.stanford.edu/R8d3tNhqNVrOE2YW22q7Lvb> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R9TbdYDK2yqTKN2lo6LV2VB> ;
+                                                         rdfs:label "全身性化学治疗"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RBC0x5TX08yzGZtF4Omymsd
+<http://webprotege.stanford.edu/RBC0x5TX08yzGZtF4Omymsd> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R7yWnNNbkfMWYcdT90nTan2> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://webprotege.stanford.edu/R8iUbHwK5D7vpwppZguW2Fb> ;
+                                                                    owl:someValuesFrom <http://webprotege.stanford.edu/R8M3usSKsGkxt8njC03wKuO>
+                                                                  ] ;
+                                                         <http://webprotege.stanford.edu/R82rRG2A1Fn8zTXOnikf7Vc> <http://webprotege.stanford.edu/R7KMO8wtvYdlR5K6jWH5kB6> ,
+                                                                                                                  <http://webprotege.stanford.edu/R7eBAPtNkKnqQejAxbgKbdr> ;
+                                                         rdfs:label "无临床体征"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RBtbIyvHr4Xje8hc5T5t5NY
+<http://webprotege.stanford.edu/RBtbIyvHr4Xje8hc5T5t5NY> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                         rdfs:label "贫血"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RBuEP8UTNJV3dFRn86mhpmo
+<http://webprotege.stanford.edu/RBuEP8UTNJV3dFRn86mhpmo> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                         rdfs:label "肾脏部位的腰痛"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RC4eVBbEhhijhsSI7jycv1R
+<http://webprotege.stanford.edu/RC4eVBbEhhijhsSI7jycv1R> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RBlPjxI65eLlhfkB5fa7TOl> ;
+                                                         rdfs:label "尿急"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RC6O7P1lOpb0KrdsdlpAfa1
+<http://webprotege.stanford.edu/RC6O7P1lOpb0KrdsdlpAfa1> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                         <http://webprotege.stanford.edu/R82rRG2A1Fn8zTXOnikf7Vc> <http://webprotege.stanford.edu/R7Lp2JyYmcNY8mjs0c4KkuS> ;
+                                                         rdfs:label "体重减轻"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RC6ecI8qYej8fYuDtCnLM6f
+<http://webprotege.stanford.edu/RC6ecI8qYej8fYuDtCnLM6f> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R9TbdYDK2yqTKN2lo6LV2VB> ;
+                                                         rdfs:label "膀胱灌注化疗"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RCN20zifXqxiN1pbGSiB493
+<http://webprotege.stanford.edu/RCN20zifXqxiN1pbGSiB493> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDf1GQgOOciAurg3t2GttGY> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD> ;
+                                                                    owl:someValuesFrom <http://webprotege.stanford.edu/RCDYlnUideUqVQxFM3FtTAt>
+                                                                  ] ;
+                                                         <http://webprotege.stanford.edu/RCfSPkBJFEFMWbEIm8nXyQU> <http://webprotege.stanford.edu/R7KMO8wtvYdlR5K6jWH5kB6> ;
+                                                         <http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD> <http://webprotege.stanford.edu/RDWy55qob8cALBSGjPDDxRm> ;
+                                                         <http://purl.org/dc/elements/1.1/type> "早期膀胱癌，非肌层浸润性膀胱癌"@zh-cn ;
+                                                         rdfs:label "T1期"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RCP6ouGDQKmKuT2PzHxUmxO
+<http://webprotege.stanford.edu/RCP6ouGDQKmKuT2PzHxUmxO> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDf1GQgOOciAurg3t2GttGY> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD> ;
+                                                                    owl:someValuesFrom <http://webprotege.stanford.edu/RCDYlnUideUqVQxFM3FtTAt>
+                                                                  ] ;
+                                                         <http://webprotege.stanford.edu/RCfSPkBJFEFMWbEIm8nXyQU> <http://webprotege.stanford.edu/R7KMO8wtvYdlR5K6jWH5kB6> ;
+                                                         <http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD> <http://webprotege.stanford.edu/RDWy55qob8cALBSGjPDDxRm> ;
+                                                         <http://purl.org/dc/elements/1.1/type> "早期膀胱癌，非肌层浸润性膀胱癌"@zh-cn ;
+                                                         rdfs:label "Ta期"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RCZcWLfRYtAEDNttBHcmVO
+<http://webprotege.stanford.edu/RCZcWLfRYtAEDNttBHcmVO> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/RC9n0GkSp26eHlWXpNMGbDn> ;
+                                                        <http://webprotege.stanford.edu/RyqrLXitHRHDj3KvMjVYRD> <http://webprotege.stanford.edu/R8d3tNhqNVrOE2YW22q7Lvb> ,
+                                                                                                                <http://webprotege.stanford.edu/RrJy91vEzDPxFP5VsqZIZk> ;
+                                                        rdfs:label "肌层浸润性膀胱肿瘤（侵袭性膀胱癌）"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RCgowtWoMuXTQzpr1gfdG2o
+<http://webprotege.stanford.edu/RCgowtWoMuXTQzpr1gfdG2o> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                         rdfs:label "小腿肿胀"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RDWy55qob8cALBSGjPDDxRm
+<http://webprotege.stanford.edu/RDWy55qob8cALBSGjPDDxRm> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RBlyufCiR916l6h6hJRj2cr> ;
+                                                         <http://webprotege.stanford.edu/RCCxHaZ0YmHvWNddn04PyBG> <http://webprotege.stanford.edu/RC6ecI8qYej8fYuDtCnLM6f> ;
+                                                         rdfs:label "经尿道膀胱肿瘤切除术"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RDZGSQdtqUpsCZsc7Y0Yi6r
+<http://webprotege.stanford.edu/RDZGSQdtqUpsCZsc7Y0Yi6r> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RBlPjxI65eLlhfkB5fa7TOl> ;
+                                                         rdfs:label "尿频"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RDpvzQy5h6VdafxlPjl0j86
+<http://webprotege.stanford.edu/RDpvzQy5h6VdafxlPjl0j86> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RBlPjxI65eLlhfkB5fa7TOl> ;
+                                                         rdfs:label "尿痛"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RrJy91vEzDPxFP5VsqZIZk
+<http://webprotege.stanford.edu/RrJy91vEzDPxFP5VsqZIZk> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/RBlyufCiR916l6h6hJRj2cr> ;
+                                                        rdfs:label "根除性膀胱切除术"@zh-cn .
+
+
+###  http://webprotege.stanford.edu/RtQPcN5EW6XJlz5rfH3zqh
+<http://webprotege.stanford.edu/RtQPcN5EW6XJlz5rfH3zqh> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/RDpYmuDNUfFshsbcAwsHn0T> ;
+                                                        rdfs:label "直肠肛门疼痛"@zh-cn .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
